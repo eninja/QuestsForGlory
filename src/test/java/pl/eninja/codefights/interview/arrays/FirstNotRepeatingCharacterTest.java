@@ -4,17 +4,17 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class firstNotRepeatingCharacterTest {
+public class FirstNotRepeatingCharacterTest {
   private String string = "ngrhhqbhnsipkcoqjyviikvxbxyphsnjpdxkhtadltsuxbfbrkof";
   private char expected = 'g';
 
   @Test
   public void findUsingArray() {
-    assertEquals(expected, firstNotRepeatingCharacter.findUsingArray(string));
+    assertEquals(expected, FirstNotRepeatingCharacter.findUsingArray(string));
   }
 
   @Test
   public void findUsingMap() {
-    assertEquals(expected, firstNotRepeatingCharacter.findUsingMap(string));
+    assertEquals(expected, FirstNotRepeatingCharacter.findUsingMap(string));
   }
 }

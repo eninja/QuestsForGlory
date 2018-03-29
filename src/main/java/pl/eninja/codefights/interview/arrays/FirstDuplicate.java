@@ -13,13 +13,13 @@ import java.util.Set;
         Example
 
         For a = [2, 3, 3, 1, 5, 2], the output should be
-        firstDuplicate(a) = 3.
+        FirstDuplicate(a) = 3.
 
         There are 2 duplicates: numbers 2 and 3. The second occurrence of 3 has a smaller index than than second
         occurrence of 2 does, so the answer is 3.
 
         For a = [2, 4, 3, 5, 1], the output should be
-        firstDuplicate(a) = -1.
+        FirstDuplicate(a) = -1.
 
         Input/Output
 
@@ -36,7 +36,7 @@ import java.util.Set;
         The element in a that occurs in the array more than once and has the minimal index for its second occurrence.
          If there are no such elements, return -1.*/
 
-public class firstDuplicate {
+public class FirstDuplicate {
 
   public static int findUsingArray(int[] a) {
     int result = -1;

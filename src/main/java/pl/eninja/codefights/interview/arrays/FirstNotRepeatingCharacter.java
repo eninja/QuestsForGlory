@@ -13,12 +13,12 @@ character, return '_'.
 Example
 
 For s = "abacabad", the output should be
-firstNotRepeatingCharacter(s) = 'c'.
+FirstNotRepeatingCharacter(s) = 'c'.
 
 There are 2 non-repeating characters in the string: 'c' and 'd'. Return c since it appears in the string first.
 
 For s = "abacabaabacaba", the output should be
-firstNotRepeatingCharacter(s) = '_'.
+FirstNotRepeatingCharacter(s) = '_'.
 
 There are no characters in this string that do not repeat.
 
@@ -39,7 +39,7 @@ The first non-repeating character in s, or '_' if there are no characters that d
 
  */
 
-public class firstNotRepeatingCharacter {
+public class FirstNotRepeatingCharacter {
   public static char findUsingArray(String s) {
     char result = '_';
     for (char c : s.toCharArray()) {

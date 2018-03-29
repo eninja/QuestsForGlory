@@ -5,7 +5,7 @@ package pl.eninja.codefights.arcade.intro;
 Example
 
 For inputArray = [3, 6, -2, -5, 7, 3], the output should be
-adjacentElementsProduct(inputArray) = 21.
+AdjacentElementsProduct(inputArray) = 21.
 
 7 and 3 produce the largest product.
 
@@ -24,7 +24,7 @@ Guaranteed constraints:
 [output] integer
 
 The largest product of adjacent elements.*/
-public class adjacentElementsProduct {
+public class AdjacentElementsProduct {
 
   public static int findMaxAdjacent(int[] inputArray) {
     int result = inputArray[0] * inputArray[1];
