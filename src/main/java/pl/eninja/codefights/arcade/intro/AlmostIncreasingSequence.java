@@ -30,72 +30,43 @@ Guaranteed constraints:
 Return true if it is possible to remove one element from the array in order to get a strictly increasing sequence,
 otherwise return false.*/
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class AlmostIncreasingSequence {
 
-  public static boolean isItPossibleSecondVersion(int[] sequence) {
+  public static boolean isItPossible(int[] sequence) {
+
+    if (sequence.length <= 3) return true;
+    if (sequence[sequence.length - 2] < sequence[1]) return false;
+
+    Set<Integer> integerSet = new HashSet<>();
 
     boolean isPossible = true;
     int counter = 0;
+    int duplicate = 0;
     for (int i = 0; i < sequence.length - 1; i++) {
       if (sequence[i + 1] <= sequence[i]) {
         counter++;
       }
       if (counter > 1) {
-        isPossible = false;
+        return false;
       }
-    }
-
-    for (int i = 0; i < sequence.length; i++) {
-      for (int j = 0; j < sequence.length; j++) {
-        if (i != j && sequence[i] == sequence[j]) {
-          return false;
-        }
+      if (!integerSet.add(sequence[i])) {
+        duplicate++;
       }
-    }
-    return isPossible;
-  }
-
-  public static boolean isItPossibleFirstVersion(int[] sequence) {
-    boolean isPossible = true;
-
-    if (sequence.length == 2) return true;
-
-    for (int removeInt : sequence) {
-      List<Integer> increasingSequence = new ArrayList<>();
-      for (int j = 0; j < sequence.length - 1; j++) {
-        if (sequence[j] != removeInt) {
-          increasingSequence.add(sequence[j]);
-        }
-      }
-      for (int i = 0; i < increasingSequence.size(); i++) {
-        for (int j = 0; j < increasingSequence.size(); j++) {
-          if (i != j && increasingSequence.get(i) == increasingSequence.get(j)) {
-            return false;
-          }
-        }
-      }
-
-      for (int i = 0; i < sequence.length; i++) {
-        for (int j = 1; j < sequence.length; j++) {
-          if (i != j && sequence[i] == sequence[j]) {
-            return false;
-          }
-        }
-      }
-
-      for (int k = 0; k < increasingSequence.size() - 1; k++) {
-        if (increasingSequence.get(k + 1) < increasingSequence.get(k)) {
-          isPossible = false;
-        }
-      }
-      if (isPossible) {
-        break;
+//
+//      for (int j = 0; j < sequence.length; j++) {
+//        if (i != j && sequence[i] == sequence[j]) {
+//          duplicate++;
+//        }
+//      }
+      if (duplicate >= 2) {
+        return false;
       }
     }
 
     return isPossible;
   }
 }
+
