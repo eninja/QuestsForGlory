@@ -30,43 +30,25 @@ Guaranteed constraints:
 Return true if it is possible to remove one element from the array in order to get a strictly increasing sequence,
 otherwise return false.*/
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class AlmostIncreasingSequence {
 
   public static boolean isItPossible(int[] sequence) {
-
-    if (sequence.length <= 3) return true;
-    if (sequence[sequence.length - 2] < sequence[1]) return false;
-
-    Set<Integer> integerSet = new HashSet<>();
-
-    boolean isPossible = true;
-    int counter = 0;
-    int duplicate = 0;
-    for (int i = 0; i < sequence.length - 1; i++) {
-      if (sequence[i + 1] <= sequence[i]) {
-        counter++;
-      }
-      if (counter > 1) {
-        return false;
-      }
-      if (!integerSet.add(sequence[i])) {
-        duplicate++;
-      }
-//
-//      for (int j = 0; j < sequence.length; j++) {
-//        if (i != j && sequence[i] == sequence[j]) {
-//          duplicate++;
-//        }
-//      }
-      if (duplicate >= 2) {
-        return false;
-      }
+    if (sequence.length < 3) {
+      return true;
     }
 
-    return isPossible;
+    int count = 0;
+
+    for (int i = 0; i < sequence.length - 1; i++) {
+      if (sequence[i] >= sequence[i + 1]) {
+        count++;
+        if (i != 0 && sequence[i + 1] <= sequence[i - 1]) {
+          if (i + 2 < sequence.length && sequence[i] >= sequence[i + 2]) {
+            return false;
+          }
+        }
+      }
+    }
+    return count < 2;
   }
 }
-

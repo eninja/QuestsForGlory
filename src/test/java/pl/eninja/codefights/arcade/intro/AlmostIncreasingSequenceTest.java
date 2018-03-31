@@ -38,7 +38,7 @@ public class AlmostIncreasingSequenceTest {
   }
 
   @Test
-  public void isItPossibleTwoDuplicateNum() {
+  public void isItPossibleTwoDuplicatesNum() {
     int[] seqPossible = {1, 2, 1, 2};
     assertFalse(AlmostIncreasingSequence.isItPossible(seqPossible));
   }
