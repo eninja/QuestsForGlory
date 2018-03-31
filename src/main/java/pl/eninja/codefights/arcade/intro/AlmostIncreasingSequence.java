@@ -30,9 +30,9 @@ Guaranteed constraints:
 Return true if it is possible to remove one element from the array in order to get a strictly increasing sequence,
 otherwise return false.*/
 
-public class AlmostIncreasingSequence {
+class AlmostIncreasingSequence {
 
-  public static boolean isItPossible(int[] sequence) {
+  static boolean isItPossible(int[] sequence) {
     if (sequence.length < 3) {
       return true;
     }

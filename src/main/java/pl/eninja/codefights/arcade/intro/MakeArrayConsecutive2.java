@@ -32,7 +32,7 @@ The minimal number of statues that need to be added to existing statues such tha
 
 import java.util.Arrays;
 
-public class MakeArrayConsecutive2 {
+class MakeArrayConsecutive2 {
 
   static int findNoOfMissedStatues(int[] statues) {
     Arrays.sort(statues);

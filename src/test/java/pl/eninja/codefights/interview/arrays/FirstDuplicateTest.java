@@ -5,8 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class FirstDuplicateTest {
-  private int[] ints = new int[]{2, 3, 3, 1, 5, 2};
-  private int expected = 3;
+
+  private final static int expected = 3;
+  private final int[] ints = new int[]{2, 3, 3, 1, 5, 2};
 
   @Test
   public void findUsingArray() {

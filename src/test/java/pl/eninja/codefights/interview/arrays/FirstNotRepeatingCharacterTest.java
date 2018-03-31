@@ -5,8 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class FirstNotRepeatingCharacterTest {
-  private String string = "ngrhhqbhnsipkcoqjyviikvxbxyphsnjpdxkhtadltsuxbfbrkof";
-  private char expected = 'g';
+
+  private final static String string = "ngrhhqbhnsipkcoqjyviikvxbxyphsnjpdxkhtadltsuxbfbrkof";
+  private final static char expected = 'g';
 
   @Test
   public void findUsingArray() {

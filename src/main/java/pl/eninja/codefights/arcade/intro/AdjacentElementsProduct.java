@@ -24,9 +24,9 @@ Guaranteed constraints:
 [output] integer
 
 The largest product of adjacent elements.*/
-public class AdjacentElementsProduct {
+class AdjacentElementsProduct {
 
-  public static int findMaxAdjacent(int[] inputArray) {
+  static int findMaxAdjacent(int[] inputArray) {
     int result = inputArray[0] * inputArray[1];
     for (int i = 1; i < inputArray.length - 1; i++) {
       int firstInt = inputArray[i];

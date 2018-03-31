@@ -39,8 +39,9 @@ The first non-repeating character in s, or '_' if there are no characters that d
 
  */
 
-public class FirstNotRepeatingCharacter {
-  public static char findUsingArray(String s) {
+class FirstNotRepeatingCharacter {
+
+  static char findUsingArray(String s) {
     char result = '_';
     for (char c : s.toCharArray()) {
       if (s.indexOf(c) == s.lastIndexOf(c)) return c;
@@ -48,7 +49,7 @@ public class FirstNotRepeatingCharacter {
     return result;
   }
 
-  public static char findUsingMap(String s) {
+  static char findUsingMap(String s) {
     char result = '_';
     Map<Character, Integer> map = new LinkedHashMap<>();
     for (char c : s.toCharArray()) {

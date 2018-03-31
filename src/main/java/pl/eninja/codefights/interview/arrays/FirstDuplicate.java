@@ -36,9 +36,9 @@ import java.util.Set;
         The element in a that occurs in the array more than once and has the minimal index for its second occurrence.
          If there are no such elements, return -1.*/
 
-public class FirstDuplicate {
+class FirstDuplicate {
 
-  public static int findUsingArray(int[] a) {
+  static int findUsingArray(int[] a) {
     int result = -1;
     for (int i = 0; i < a.length; i++) {
       if (a[Math.abs(a[i]) - 1] < 0) {
@@ -49,7 +49,7 @@ public class FirstDuplicate {
     return result;
   }
 
-  public static int findUsingSet(int[] a) {
+  static int findUsingSet(int[] a) {
     int result = -1;
     Set<Integer> set = new HashSet<>();
     for (int i : a) {

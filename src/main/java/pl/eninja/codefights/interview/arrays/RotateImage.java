@@ -1,6 +1,6 @@
 package pl.eninja.codefights.interview.arrays;
 
-public class RotateImage {
+class RotateImage {
 
   static int[][] rotate(int[][] a) {
     int length = a.length;
