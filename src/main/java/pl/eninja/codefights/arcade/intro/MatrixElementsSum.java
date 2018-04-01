@@ -64,15 +64,18 @@ class MatrixElementsSum {
 
   static int sum(int[][] matrix) {
     int sum = 0;
-    for (int i = 0; i < matrix.length; i++) {
-      for (int j = 0; j < matrix[i].length; j++) {
-        if (i == 0) {
-          sum = sum + matrix[i][j];
-        } else {
+    for (int i = matrix.length - 1; i >= 0; i--) {
+      for (int j = matrix[i].length - 1; j >= 0; j--) {
+        int countZero = 0;
+        for (int k = i - 1; k >= 0; k--) {
 
-          if (matrix[i - 1][j] != 0) {
-            sum += matrix[i][j];
+          if (matrix[k][j] == 0) {
+            countZero++;
+            break;
           }
+        }
+        if (countZero == 0) {
+          sum += matrix[i][j];
         }
       }
     }
