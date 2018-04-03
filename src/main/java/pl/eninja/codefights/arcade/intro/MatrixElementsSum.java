@@ -1,5 +1,3 @@
-package pl.eninja.codefights.arcade.intro;
-
 /*After they became famous, the CodeBots all decided to move to a new building and live together.
  The building is
 represented by a rectangular matrix of rooms. Each cell in the matrix contains an integer that
@@ -60,6 +58,8 @@ Guaranteed constraints:
 [output] integer
 
 The total price of all the rooms that are suitable for the CodeBots to live in.*/
+package pl.eninja.codefights.arcade.intro;
+
 class MatrixElementsSum {
 
   static int sum(int[][] matrix) {

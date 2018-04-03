@@ -1,4 +1,3 @@
-package pl.eninja.codefights.arcade.intro;
 /*Given two strings, find the number of common characters between them.
 
 Example
@@ -27,6 +26,7 @@ Guaranteed constraints:
 1 ≤ s2.length ≤ 15.
 
 [output] integer*/
+package pl.eninja.codefights.arcade.intro;
 
 import java.util.HashMap;
 import java.util.Map;

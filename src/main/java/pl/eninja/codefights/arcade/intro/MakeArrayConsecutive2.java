@@ -1,5 +1,3 @@
-package pl.eninja.codefights.arcade.intro;
-
 /*Ratiorg got statues of different sizes as a present from CodeMaster for his birthday, each
 statue having an
 non-negative integer size. Since he likes to findNoOfMissedStatues things perfect, he wants to
@@ -33,6 +31,7 @@ Guaranteed constraints:
 The minimal number of statues that need to be added to existing statues such that it contains
 every integer size from
  an interval [L, R] (for some L, R) and no other sizes.*/
+package pl.eninja.codefights.arcade.intro;
 
 import java.util.Arrays;
 

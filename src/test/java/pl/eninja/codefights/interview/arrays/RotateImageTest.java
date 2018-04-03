@@ -1,8 +1,7 @@
 package pl.eninja.codefights.interview.arrays;
 
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class RotateImageTest {
 
@@ -12,6 +11,6 @@ public class RotateImageTest {
   @Test
   public void rotate() {
     //noinspection deprecation
-    assertEquals(expected, RotateImage.rotate(a));
+    Assert.assertArrayEquals(expected, RotateImage.rotate(a));
   }
 }

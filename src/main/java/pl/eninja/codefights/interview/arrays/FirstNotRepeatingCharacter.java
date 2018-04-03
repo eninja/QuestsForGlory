@@ -1,8 +1,3 @@
-package pl.eninja.codefights.interview.arrays;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 /*
 Note: Write a solution that only iterates over the string once and uses O(1) additional memory,
 since this is what
@@ -41,6 +36,10 @@ Guaranteed constraints:
 The first non-repeating character in s, or '_' if there are no characters that do not repeat.
 
  */
+package pl.eninja.codefights.interview.arrays;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 class FirstNotRepeatingCharacter {
 

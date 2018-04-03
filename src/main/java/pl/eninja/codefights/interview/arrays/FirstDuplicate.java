@@ -1,7 +1,3 @@
-package pl.eninja.codefights.interview.arrays;
-
-import java.util.HashSet;
-import java.util.Set;
 /*Note: Write a solution with O(n) time complexity and O(1) additional space complexity, since
 this is what you would
  be asked to do during a real interview.
@@ -41,6 +37,10 @@ this is what you would
         The element in a that occurs in the array more than once and has the minimal index for
         its second occurrence.
          If there are no such elements, return -1.*/
+package pl.eninja.codefights.interview.arrays;
+
+import java.util.HashSet;
+import java.util.Set;
 
 class FirstDuplicate {
 
