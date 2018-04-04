@@ -20,6 +20,7 @@ Guaranteed constraints:
 [output] array.string
 
 Array of the longest strings, stored in the same order as in the inputArray.*/
+
 package pl.eninja.codefights.arcade.intro;
 
 class AllLongestStrings {

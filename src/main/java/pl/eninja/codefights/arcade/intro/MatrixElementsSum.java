@@ -58,6 +58,7 @@ Guaranteed constraints:
 [output] integer
 
 The total price of all the rooms that are suitable for the CodeBots to live in.*/
+
 package pl.eninja.codefights.arcade.intro;
 
 class MatrixElementsSum {

@@ -26,6 +26,7 @@ Guaranteed constraints:
 1 ≤ s2.length ≤ 15.
 
 [output] integer*/
+
 package pl.eninja.codefights.arcade.intro;
 
 import java.util.HashMap;

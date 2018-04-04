@@ -22,6 +22,7 @@ Guaranteed constraints:
 45 ≤ a[i] ≤ 100.
 
 [output] array.integer*/
+
 package pl.eninja.codefights.arcade.intro;
 
 class AlternatingSums {

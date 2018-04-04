@@ -31,6 +31,7 @@ Guaranteed constraints:
 The minimal number of statues that need to be added to existing statues such that it contains
 every integer size from
  an interval [L, R] (for some L, R) and no other sizes.*/
+
 package pl.eninja.codefights.arcade.intro;
 
 import java.util.Arrays;

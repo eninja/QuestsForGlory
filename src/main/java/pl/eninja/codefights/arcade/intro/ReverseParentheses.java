@@ -22,6 +22,7 @@ Constraints:
 5 ≤ s.length ≤ 55.
 
 [output] string*/
+
 package pl.eninja.codefights.arcade.intro;
 
 class ReverseParentheses {

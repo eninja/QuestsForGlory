@@ -27,6 +27,7 @@ Guaranteed constraints:
 [output] array.string
 
 The same matrix of characters, framed with a border of asterisks of width 1.*/
+
 package pl.eninja.codefights.arcade.intro;
 
 class AddBorder {
