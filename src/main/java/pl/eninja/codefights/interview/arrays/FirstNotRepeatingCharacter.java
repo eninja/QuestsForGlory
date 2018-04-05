@@ -36,6 +36,7 @@ Guaranteed constraints:
 The first non-repeating character in s, or '_' if there are no characters that do not repeat.
 
  */
+
 package pl.eninja.codefights.interview.arrays;
 
 import java.util.LinkedHashMap;

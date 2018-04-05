@@ -29,6 +29,7 @@ a[i].length = a.length,
 1 ≤ a[i][j] ≤ 104.
 
 [output] array.array.integer*/
+
 package pl.eninja.codefights.interview.arrays;
 
 class RotateImage {
