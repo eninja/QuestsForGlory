@@ -4,17 +4,19 @@ When you finally decide to head back, you realize there's a chance the bridges o
 
 Using the bike's timer, calculate the current time. Return an answer as the sum of digits that the digital timer in the format hh:mm would show.*/
 
-package pl.eninja.codefights.arcade.intro;
+package pl.eninja.codefights.arcade.core;
 
 class LateRide {
 
     int lateRide(int n) {
         int hour = n / 60;
         int minutes = n % 60;
+
         int firstDigitOfHour = hour / 10;
         int secondDigitOfHour = hour % 10;
         int firstDigitOfMinutes = minutes / 10;
         int secondDigitOfMinutes = minutes % 10;
+
         return firstDigitOfHour + secondDigitOfHour + firstDigitOfMinutes + secondDigitOfMinutes;
     }
 }

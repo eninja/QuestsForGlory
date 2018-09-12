@@ -1,6 +1,7 @@
-package pl.eninja.codefights.arcade.intro;
+package pl.eninja.codefights.arcade.core;
 
 import org.junit.Test;
+import pl.eninja.codefights.arcade.core.LateRide;
 
 import static org.junit.Assert.assertEquals;
 
